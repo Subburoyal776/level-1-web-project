@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Level 1 Web Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">My Website</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to My Website</h1>
+
+            <p>
+                This is my Level 1 HTML, CSS and JavaScript project.
+                I am learning how to create modern and responsive websites.
+            </p>
+
+            <button onclick="changeBackground()">
+                Change Background
+            </button>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="images/logo of my project.png" alt="Web Development">
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+
+        <h2>About My Project</h2>
+
+        <p>
+            This project demonstrates HTML structure, CSS styling,
+            responsive navigation and basic JavaScript functionality.
+        </p>
+
+    </section>
+
+
+    <!-- Greeting -->
+    <section class="greeting-section">
+
+        <h2>Today's Greeting</h2>
+
+        <div id="greeting">
+            Click the button to see your greeting.
+        </div>
+
+        <button onclick="showGreeting()">
+            Show Greeting
+        </button>
+
+    </section>
+
+
+    <!-- Calculator -->
+    <section class="calculator section">
+
+        <h2>Simple Addition Calculator</h2>
+
+        <input
+            type="number"
+            id="number1"
+            placeholder="Enter first number"
+        >
+
+        <input
+            type="number"
+            id="number2"
+            placeholder="Enter second number"
+        >
+
+        <button onclick="calculateSum()">
+            Add Numbers
+        </button>
+
+        <h3 id="result">Result: </h3>
+
+    </section>
+
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact section">
+
+        <h2>Contact Me</h2>
+
+        <form onsubmit="submitForm(event)">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Enter your message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+        <p id="form-message"></p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 My Level 1 Web Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

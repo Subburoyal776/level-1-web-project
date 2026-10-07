@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+
+/* Navigation */
+
+.navbar {
+    background: #111827;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 60px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #f0f9ff
+    );
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    width: 40%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* Buttons */
+
+button {
+    background: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 13px 22px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* General Sections */
+
+.section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section h2,
+.greeting-section h2,
+.calculator h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 700px;
+    margin: auto;
+
+    line-height: 1.7;
+}
+
+
+/* Greeting */
+
+.greeting-section {
+    padding: 70px 8%;
+    text-align: center;
+
+    background: #e0f2fe;
+}
+
+#greeting {
+    font-size: 22px;
+    font-weight: bold;
+
+    margin: 20px;
+}
+
+
+/* Calculator */
+
+.calculator {
+    background: white;
+}
+
+.calculator input {
+    padding: 13px;
+
+    margin: 8px;
+
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+#result {
+    margin-top: 20px;
+    color: #2563eb;
+}
+
+
+/* Contact Form */
+
+.contact {
+    background: #eef2ff;
+}
+
+form {
+    max-width: 500px;
+    margin: 30px auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    padding: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#form-message {
+    color: green;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    background: #111827;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .calculator input {
+        width: 90%;
+    }
+}
